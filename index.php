@@ -1,16 +1,18 @@
 <?php
+require_once 'init.php';
+  include 'Validate.php';
   use Validation\validate;
 
   $validate = new Validate();
   $validation = $validate->check($_POST, [
-    'name' = [
+    'name' => [
       'required' => true,
       'min'      => 2,
       'max'      => 20
     ],
-    'email' = [
+    'email' => [
       'required' => true,
       'unique'   => 'users'
-      ]  
+      ]
   ]);
  ?>

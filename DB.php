@@ -1,7 +1,9 @@
 <?php
     namespace Database;
-    use Config\Env;
     require_once 'init.php';
+
+    use PDO;
+    use Config\Env;
 
     class DB {
       private static $instance = null;
