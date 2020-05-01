@@ -13,6 +13,9 @@
     }
 
     
+    public function passed() {
+      return $this->_passed;
+    }
 
     public function errors() {
       return $this->_errors;
