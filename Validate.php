@@ -12,10 +12,10 @@
       $this->_db = DB::getInstance(); // Connect your database here
     }
 
-    public function check($source, $items = []) {
-      if(!empty($items)) {
-        
-      }
+    
+
+    public function errors() {
+      return $this->_errors;
     }
   }
 ?>
